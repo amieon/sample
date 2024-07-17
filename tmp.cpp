@@ -7,6 +7,8 @@ int main(){
     cout << "oh year~\n";
     cout << "oh year~\n";
     cout << "oh year~\n";
+    cout << "oh year~\n";
+    cout << "oh year~\n";
     for(int i=2;i<maxn;++i){
         if(!phi[i])
             prime[++tot] = i,phi[i] = i-1;

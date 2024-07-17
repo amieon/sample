@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 const int maxn = 107;
+const int mod = 114514;
 int prime[maxn],tot,phi[maxn],sumphi[maxn];
 int main(){
     cout << "oh year~\n";
@@ -9,7 +10,7 @@ int main(){
     for(int i=2;i<maxn;++i){
         if(!phi[i])
             prime[++tot] = i,phi[i] = i-1;
-        sumphi[i] = sumphi[i-1] + prime[i];
+        sumphi[i] = (sumphi[i-1] + prime[i])%mod;
         for(int j=1;i*prime[j] < maxn && j<=tot;++j) {
             if (i % prime[j] == 0) {
                 phi[i * prime[j]] = phi[i] * prime[j];

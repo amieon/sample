@@ -16,7 +16,7 @@ int exgcd(int a,int b,int &x,int &y){
 int main(){
     cout << "oh year~\n";
     cout << "oh year~\n";
-    cout << "oh year~\n";
+    cout << "oh ydr~\n";
     cout << "oh year~\n";
     cout << "oh year~\n";
     for(int i=2;i<maxn;++i){
